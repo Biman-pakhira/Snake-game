@@ -31,6 +31,10 @@ main, section{
     height: 100%;
     padding: var(--space-md);
 }
+section{
+    display: flex;
+    flex-direction: column;
+}
 section .infos{
     width: 100%;
     display: flex;
@@ -41,4 +45,17 @@ section .infos{
     padding: var(--space-sm) var(--space-md);
     border: 1px solid var(--border-primary-color);
     border-radius: 20px;
+}
+.board{
+    border: 1px solid var(--border-primary-color);
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(30px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(30px, 1fr));
+
+}
+.block{
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--border-primary-color);
 }
