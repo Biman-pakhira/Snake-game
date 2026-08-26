@@ -16,8 +16,8 @@ for (let rowindex = 0; rowindex < row; rowindex++) {
         const block = document.createElement("div");
         block.classList.add("block");
         board.appendChild(block);
-        block.innerText=`${rowindex}-${colindex}`;
-        blocks[`${rowindex}-${colindex}`]=block
+        // block.innerText=`${rowindex}-${colindex}`;
+        // blocks[`${rowindex}-${colindex}`]=block
     }
     
 }
